@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
+const http = require('http');
 const { name } = require("ejs");
 
 const app = express();
@@ -14,7 +15,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-prabhat:Test123@cluster0.sfm2k5m.mongodb.net/todolistDB", { useNewUrlParser: true});
+mongoose.connect("Enter you data base path/ database name");
+
+
 
 
 
